@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.navigasi {
+  padding: 20px;
+  color: white;
+  box-shadow: 1px 1px 8px whitesmoke;
+  background-color: black;
+}
+
+.logo {
+  float: left;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu ul li a:hover {
+  color: lightskyblue;
+  font-style: italic;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 495px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-home img {
+  width: 35%;
+  height: auto;
+  border-radius: 60% 50% 60% 60%;
+  box-shadow: 1px 1px 20px whitesmoke;
+}
+
+.container-home span {
+  font-weight: 700;
+  color: bisque;
+  font-size: 2em;
+}
+
+.About {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.container-About {
+    width: 70%;
+    height: 300px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 12px;
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+  }
+
+
+.gambar img {
+  width: 25%;
+  border-radius: 50% 45% 50% 50%;
+  display: flex;
+  margin-left: 38%;
+  gap: 7rem;
+}
+ 
+/* .skill */
+
+.h1 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.container {
+  margin-top: 3rem;
+  width: 100%;
+  height: 400px;
+}
+
+.gambar2 {
+  padding-top: 80px;
+}
+ .gambar2 img { 
+  width: 80px;
+  justify-content: center;
+  transition-duration: 300ms;
+}
+
+
+.gambar2 img:hover {
+  transform: scale(1.1);
+}
+
+
+.certificate {
+  margin-top: 5rem;
+}
+
+ .gambar3 img {
+  width: 30%;
+  padding-top: 40px;
+  padding: 1rem;
+} 
+
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+
+/* .Contact  */
+
+.h22 {
+  text-align: center;
+  padding-top: 20%;
+}
+
+.gambar4 img {
+  width: 4%;
+  height: auto;
+  position: absolute;
+  left: 44%;
+  margin-top: 3rem;
+  bottom: -300%;
+  transition-duration: 300ms;
+}
+
+
+.gambar4 img:hover {
+  transform: scale(1.1);
+}
+
+.gambar5 img {
+  width: 4%;
+  height: auto;
+  position: absolute;
+  left: 52%;
+  margin-top: 3rem;
+  bottom: -300%;
+  transition-duration: 300ms;
+}
+
+
+.gambar5 img:hover {
+  transform: scale(1.1);
+}
+
+
+footer {
+  background-color: rgb(18, 18, 18);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 10px 10px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+ @media only screen and (max-width: 780px) {
+  .home h1 {
+    font-size: small;
+  }
+ 
+} 
+
+
+@media only screen and (max-width: 1024px) {
+  .container-home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container-home img {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .About {
+    padding: 20px;
+  }
+
+  .container-About {
+    width: 100%;
+  }
+
+  .gambar img {
+    max-width: 150px;
+  }
+
+  .gambar2 img {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container-home img {
+    max-width: 70%;
+  }
+
+  .container-home span {
+    font-size: 1.5rem;
+  }
+
+  .gambar4 img,
+  .gambar5 img {
+    width: 40px;
+  }
+}

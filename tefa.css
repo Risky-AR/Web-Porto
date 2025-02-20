@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(92, 215, 207);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+button {
+    font-weight: bold;
+    background-color: #68ace04f;
+    border: none;
+    color: white;
+    padding: 10px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all;
+    transition-duration: 300ms;
+  }
+  
+  button:hover {
+      transform: scaleX(1.1);
+      box-shadow: 0 0 10px #b0e2facc;
+  }
+  
+  button a {
+      text-decoration: none;
+  }
+
+.h1 {
+    text-align: center;
+}
+
+.gambar1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.gambar1 img {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+}
+
+
+.artikel-rumah-adat-kuta-h1, .artikel-2, .p1, .p2, .p3, .p4 {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .gambar1 img {
+        width: 100%;
+    }
+    .artikel-rumah-adat-kuta-h1, .artikel-2, .p1, .p2, .p3, .p4 {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .artikel-rumah-adat-kuta-h1, .artikel-2, .p1, .p2, .p3, .p4 {
+        padding: 10px;
+    }
+}
